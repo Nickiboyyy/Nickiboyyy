@@ -5,11 +5,31 @@ Ich arbeite an meinem Projekt **Lunora Online** und bin CEO bei **Lunora** sowie
 Ich lerne gerade **Python, Java, Html, javascript** und **Css** um selbst an Projekten arbeiten zu koennen.
 
 ---
-### 📊 Meine Skill-Prozente
+## 📊 My Developer Skills
 
-![Java](https://img.shields.io/badge/Java_Coding-85%25-orange?style=flat-square&logo=java)
-![Spigot API](https://img.shields.io/badge/Spigot_API-70%25-blue?style=flat-square)
-![Plugin Design](https://img.shields.io/badge/Plugin_Design-50%25-red?style=flat-square)
+Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, basierend auf meinen Projekten (Discord-Bots, Minecraft-Plugins und Web-Development):
+
+<table>
+  <tr>
+    <td width="180"><b>🐍 Python (Bots)</b></td>
+    <td width="400"><progress value="80" max="100"></progress> <b>80%</b></td>
+  </tr>
+  <tr>
+    <td><b>☕ Java (Spigot API)</b></td>
+    <td><progress value="50" max="100"></progress> <b>50%</b></td>
+  </tr>
+  <tr>
+    <td><b>🌐 HTML5 & CSS3</b></td>
+    <td><progress value="30" max="100"></progress> <b>30%</b></td>
+  </tr>
+  <tr>
+    <td><b>⚡ JavaScript</b></td>
+    <td><progress value="20" max="100"></progress> <b>20%</b></td>
+  </tr>
+</table>
+
+---
+*🚀 Aktiv am Lernen und Entwickeln von neuen Systemen!*
 ---
 
 # 🌐 Social Media
