@@ -15,7 +15,7 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
     <td width="400"><progress value="80" max="100"></progress> <b>27%</b></td>
   </tr>
   <tr>
-    <td><b>☕ Java (Spigot API)</b></td>
+    <td><b>☕ Java</b></td>
     <td><progress value="50" max="100"></progress> <b>17%</b></td>
   </tr>
   <tr>
