@@ -1,8 +1,8 @@
 # 🌙 About Me
 
-Hi, ich bin **Moon**! ✨  
+Hi, ich bin **!moonprincess**! ✨  
 Ich arbeite an meinem Projekt **Lunora Online** und bin CEO bei **Lunora** sowie Volunteer bei **Satsuya**.
-Ich lerne gerade **Python, Java, Html, javasript** und **Css** um selbst an Projhekten arbeiten zu koennen.
+Ich lerne gerade **Python, Java, Html, javascript** und **Css** um selbst an Projhekten arbeiten zu koennen.
 
 ---
 
