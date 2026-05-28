@@ -12,7 +12,7 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
 <table>
   <tr>
     <td width="180"><b>🐍 Python (Bots)</b></td>
-    <td width="400"><progress value="80" max="100"></progress> <b>60%</b></td>
+    <td width="400"><progress value="80" max="100"></progress> <b>27%</b></td>
   </tr>
   <tr>
     <td><b>☕ Java (Spigot API)</b></td>
