@@ -47,6 +47,128 @@ Du bist ein Fan von **Fantasy RP** und **Magie**? Dann bist du bei uns genau ric
 Willkommen auf **Minecraft Ruins**! Bei uns findest du genau dein perfektes Fantasy-RP-Erlebnis. 🏰✨
 
 ---
+# 🌙 MooncoreNetwork (Lunora) Bot
+
+Ein hochmodularer, professioneller Discord-Bot, entwickelt für das MooncoreNetwork. Lunora vereint Moderation, Entertainment und System-Management in einer skalierbaren Architektur.
+
+## 🛡️ Kern-Systeme & Sicherheit
+
+### 1. Globales Identity-System
+Jeder Nutzer erhält bei der ersten Interaktion eine bot-weite, 8-stellige ID. Diese dient der serverübergreifenden Identifizierung (Stored in `global_user_map.json`), unabhängig von Namensänderungen oder Server-Wechseln.
+
+### 2. Dezentrale Datenverwaltung (`lib/data_manager.py`)
+Im Gegensatz zu monolithischen Datenbanken nutzt dieser Bot ein guild-spezifisches JSON-System.
+- **Speicherort:** `/data/{guild_id}.json`
+- **Vorteil:** Hohe Performance, einfache Backups pro Server und strikte Datentrennung.
+
+### 3. CEO-System & Panic-Mode
+Ein mehrstufiges Sicherheitssystem:
+- **Panic-Mode:** Sperrt sofort alle Bot-Interaktionen global (außer für autorisierte CEOs).
+- **Auto-Reset:** Der Panic-Mode deaktiviert sich nach 12 Stunden automatisch, falls kein manueller Eingriff erfolgt.
+- **Master-User:** In `lib/permissions.py` ist eine Master-ID hinterlegt, die Hard-Override-Rechte besitzt.
+
+---
+
+## 📋 Vollständige Befehlsreferenz
+
+### 🛠️ System & Moderation
+| Befehl | Beschreibung | Berechtigung |
+|:-------|:-------------|:-------------|
+| `/botinfo` | Zeigt technische Statistiken und die aktuelle Serveranzahl. | Jeder |
+| `/mail <user>` | Öffnet ein Modal, um eine offizielle Team-Mitteilung per DM zu senden. | Manage Messages |
+| `/role add <user> <role>` | Weist einem Mitglied eine Rolle zu (Hierarchie-Check inkludiert). | Manage Roles |
+| `/role remove <user> <role>` | Entfernt eine Rolle von einem Mitglied. | Manage Roles |
+| `/role info <user>` | Detaillierte Auflistung aller Rollen eines Nutzers. | Jeder |
+| `/role list` | Zeigt eine Statistik aller Rollen und deren Mitgliederzahl. | Jeder |
+| `/ceo login` | Autorisiert einen CEO für System-Eingriffe. | CEO-Status |
+| `/permission add` | (Intern) Fügt Berechtigungen für spezifische Befehle hinzu. | Administrator |
+
+### 🏠 Willkommens- & Verlassens-System
+| Befehl | Beschreibung |
+|:-------|:-------------|
+| `/setwelcomechannel` | Legt den Kanal für Beitrittsnachrichten fest. |
+| `/setwillkommens` | Konfiguriert das Embed (Titel, Beschreibung, Banner, Farben). |
+| `/testwillkommens` | Sendet eine Test-Nachricht in den konfigurierten Kanal. |
+| `/setleavechannel` | Legt den Kanal für Austrittsnachrichten fest. |
+| `/setverlassen` | Konfiguriert die Nachricht für Nutzer, die den Server verlassen. |
+| `/setwillkommen` | (Line-basiert) Erlaubt alternative Willkommens-Nachrichten in mehreren Kanälen. |
+
+**Unterstützte Platzhalter:** `{user}`, `{user_id}`, `{user_name}`, `{guild}`, `{member_count}`, `<>` (für Zeilenumbruch).
+
+### 💋 Social & XP (Kiss-System)
+| Befehl | Beschreibung |
+|:-------|:-------------|
+| `/kiss <user>` | Küsst einen Nutzer. Erhöht die Kuss-XP und sendet ein zufälliges GIF. |
+| `/kiss-multi <mentions>` | (Admin) Küsst mehrere Nutzer gleichzeitig für Massen-XP. |
+| `/kiss-special` | Ein spezieller Kuss-Befehl für Zero Two. |
+| `/kuss_leaderboard` | Zeigt die Top 10 Nutzer mit den meisten Kuss-XP auf dem Server. |
+| `/kiss_xp_add <user> <amount>`| Fügt einem Nutzer manuell Kuss-XP hinzu (Admin only). |
+
+### 🎮 Entertainment & Fun
+| Befehl | Beschreibung |
+|:-------|:-------------|
+| `/zaehlen start <channel>` | Aktiviert das Counting-Game im Zielkanal. |
+| `/zaehlen stopp <channel>` | Deaktiviert das Counting-Game. |
+| `/crypto <coin>` | Ruft aktuelle Kurse von CoinGecko ab. |
+| `/poll` | Erstellt eine interaktive Umfrage. |
+| `/mock <text>` | Wandelt Text in mOck-sChReiBwEiSe um. |
+
+---
+
+## 🏗️ Architektur für Entwickler
+
+### Modulares Laden
+Der Bot nutzt spezialisierte Loader in `/lib`, um Komponenten beim Start zu registrieren:
+1.  **Commands:** Automatische Instanziierung von Klassen in `/commands`.
+2.  **Events:** Dynamische Bindung von Discord-Events an Handler in `/events`.
+3.  **Tasks:** Asynchrone Hintergrund-Loops in `/tasks`.
+4.  **Modals:** UI-Komponenten in `/modals`.
+
+### Global Registry (`lib/global_registry.py`)
+Verwende `g_data`, um auf globale Instanzen zuzugreifen, ohne Zirkel-Importe zu riskieren:
+```python
+from lib.global_registry import g_data
+cfg = g_data.get("cfg")
+```
+
+## Adding Commands
+
+Erstelle eine Datei in `/commands/`, z.B. `ping.py`:
+```python
+class Command:
+    def __init__(self, client, cfg):
+        @client.tree.command(name="ping")
+        async def ping(interaction):
+            await interaction.response.send_message("Pong!")
+```
+
+## Adding Events
+Erstelle eine Datei in `/events/`, z.B. `logger.py`:
+```python
+from lib.load_events import register_event
+async def on_message(msg): ...
+async def setup(client, cfg):
+    register_event("on_message", on_message)
+```
+
+## Library Reference (short)
+- `lib/data_manager.py` — CRUD Operationen für Guild-JSONs.
+- `lib/permissions.py` — Zentrale Prüfung von Admin- und Master-Rechten.
+- `lib/global_registry.py` — Singleton Store für bot-weite Objekte.
+- `lib/configuration_file.py` — YAML Parser für die `config.yml`.
+
+---
+
+## ⚙️ Installation
+
+1.  `config.yml` erstellen (Token, Sync-Guild eintragen).
+2.  Abhängigkeiten: `pip install discord.py pyyaml colorama requests pytz`.
+3.  Start: `python main.py`.
+
+*Entwickelt für MooncoreNetwork. Alle Daten werden lokal im `/data` Verzeichnis gespeichert.*
+
+
+---
 
 # 🤝 Partner
 
