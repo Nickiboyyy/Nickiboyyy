@@ -24,7 +24,7 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
   </tr>
   <tr>
     <td><b>⚡ JavaScript</b></td>
-    <td><progress value="20" max="100"></progress> <b>10%</b></td>
+    <td><progress value="20" max="100"></progress> <b>8%</b></td>
   </tr>
 </table>
 
