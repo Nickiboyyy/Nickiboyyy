@@ -2,7 +2,7 @@
 
 Hi, ich bin **!moonprincess**! ✨  
 Ich arbeite an meinem Projekt **Lunora Online** und bin CEO bei **Lunora** sowie Volunteer bei **Satsuya**.
-Ich lerne gerade **Python, Java, Html, javascript** und **Css** um selbst an Projekten arbeiten zu koennen.
+Ich lerne gerade **Python, Java, Html, javascript** und **CSS** um selbst an Projekten arbeiten zu koennen.
 
 ---
 ## 📊 My Developer Skills
