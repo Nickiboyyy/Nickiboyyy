@@ -47,7 +47,7 @@ Du bist ein Fan von **Fantasy RP** und **Magie**? Dann bist du bei uns genau ric
 Willkommen auf **Minecraft Ruins**! Bei uns findest du genau dein perfektes Fantasy-RP-Erlebnis. 🏰✨
 
 ---
-# 🌙 MooncoreNetwork (Lunora) Bot
+# 🌙 Lunora Network Aiko System Bot (Discord)
 
 Ein hochmodularer, professioneller Discord-Bot, entwickelt für das MooncoreNetwork. Lunora vereint Moderation, Entertainment und System-Management in einer skalierbaren Architektur.
 
