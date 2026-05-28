@@ -12,19 +12,19 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
 <table>
   <tr>
     <td width="180"><b>🐍 Python (Bots)</b></td>
-    <td width="400"><progress value="80" max="100"></progress> <b>80%</b></td>
+    <td width="400"><progress value="80" max="100"></progress> <b>60%</b></td>
   </tr>
   <tr>
     <td><b>☕ Java (Spigot API)</b></td>
-    <td><progress value="50" max="100"></progress> <b>50%</b></td>
+    <td><progress value="50" max="100"></progress> <b>17%</b></td>
   </tr>
   <tr>
-    <td><b>🌐 HTML5 & CSS3</b></td>
-    <td><progress value="30" max="100"></progress> <b>30%</b></td>
+    <td><b>🌐 HTML5 & CSS</b></td>
+    <td><progress value="30" max="100"></progress> <b>8%</b></td>
   </tr>
   <tr>
     <td><b>⚡ JavaScript</b></td>
-    <td><progress value="20" max="100"></progress> <b>20%</b></td>
+    <td><progress value="20" max="100"></progress> <b>10%</b></td>
   </tr>
 </table>
 
