@@ -19,12 +19,16 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
     <td><progress value="50" max="100"></progress> <b>17%</b></td>
   </tr>
   <tr>
-    <td><b>🌐 HTML5 & CSS</b></td>
-    <td><progress value="30" max="100"></progress> <b>14%</b></td>
+    <td><b>🌐 HTML </b></td>
+    <td><progress value="30" max="100"></progress> <b>100%</b></td>
   </tr>
   <tr>
     <td><b>⚡ JavaScript</b></td>
     <td><progress value="20" max="100"></progress> <b>10%</b></td>
+  </tr>
+    <tr>
+    <td><b>🌐 CSS </b></td>
+    <td><progress value="30" max="100"></progress> <b>12%</b></td>
   </tr>
 </table>
 
