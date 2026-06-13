@@ -30,6 +30,10 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
     <td><b>🌐 CSS </b></td>
     <td><progress value="30" max="100"></progress> <b>12%</b></td>
   </tr>
+    <tr>
+    <td><b>🌐 Node.js </b></td>
+    <td><progress value="30" max="100"></progress> <b>2%</b></td>
+  </tr>
 </table>
 
 ---
