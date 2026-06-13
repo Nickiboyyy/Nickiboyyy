@@ -12,27 +12,27 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
 <table>
   <tr>
     <td width="180"><b>🐍 Python (Bots)</b></td>
-    <td width="400"><progress value="80" max="100"></progress> <b>27%</b></td>
+    <td width="400"><progress value="27" max="100"></progress> <b>27%</b></td>
   </tr>
   <tr>
     <td><b>☕ Java</b></td>
-    <td><progress value="50" max="100"></progress> <b>17%</b></td>
+    <td><progress value="17" max="100"></progress> <b>17%</b></td>
   </tr>
   <tr>
-    <td><b>🌐 HTML </b></td>
-    <td><progress value="30" max="100"></progress> <b>100%</b></td>
+    <td><b>🌐 HTML</b></td>
+    <td><progress value="100" max="100"></progress> <b>100%</b></td>
+  </tr>
+  <tr>
+    <td><b>🎨 CSS</b></td>
+    <td><progress value="12" max="100"></progress> <b>12%</b></td>
   </tr>
   <tr>
     <td><b>⚡ JavaScript</b></td>
-    <td><progress value="20" max="100"></progress> <b>10%</b></td>
+    <td><progress value="10" max="100"></progress> <b>10%</b></td>
   </tr>
-    <tr>
-    <td><b>🌐 CSS </b></td>
-    <td><progress value="30" max="100"></progress> <b>12%</b></td>
-  </tr>
-    <tr>
-    <td><b>🌐 Node.js </b></td>
-    <td><progress value="30" max="100"></progress> <b>2%</b></td>
+  <tr>
+    <td><b>🟢 Node.js</b></td>
+    <td><progress value="2" max="100"></progress> <b>2%</b></td>
   </tr>
 </table>
 
