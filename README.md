@@ -36,6 +36,8 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
   </tr>
 </table>
 
+-# standt 2025
+
 ---
 *🚀 Aktiv am Lernen und Entwickeln von neuen Systemen!*
 ---
