@@ -53,7 +53,7 @@ Hier ist eine Übersicht meiner aktuellen Programmiersprachen und Fähigkeiten, 
 
 ---
 
-# 🌟 Lunora
+# 🌟 Lunora Network
 
 Willkommen bei **Lunora** – wo Innovation und Gaming in einem einzigartigen Netzwerk verschmelzen!
 
